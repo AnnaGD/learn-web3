@@ -62,5 +62,15 @@
         transport: custom(window.etherium),
     });
 
-    
+    // this will make you wallet extension show you a pop-up requesting you ro connect your wallet
+    // accounts will be an array
+    const accounts = await walletClient.requestAddresses();
+
+    // get the frist address in the accounts array
+    const [address] = accounts;
+
+    // TODO -- Replace the following two values
+    // Make sure the MoodContractAddress is in double single/double quotes
+    const MoodContractAddress = "...";
+    const MoodContractABI = ... ;
 </script>
