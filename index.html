@@ -73,4 +73,12 @@
     // Make sure the MoodContractAddress is in double single/double quotes
     const MoodContractAddress = "...";
     const MoodContractABI = ... ;
+
+    const MoodContractABI = [ {...}, {...} ];
+
+    const MoodContractInstance = getContract({
+        address: MoodContractAddress,
+        abi: MoodContractABI,
+        client: walletClient,
+    });
 </script>
